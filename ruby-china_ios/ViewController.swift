@@ -7,19 +7,33 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
+import AlamofireSwiftyJSON
 
 class ViewController: UIViewController {
 
+  @IBOutlet weak var titleTxt: UILabel!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    titleTxt.frame = CGRect(x: 0, y: 0, width: 400, height: 100)
   }
-
+  
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
 
-
+  @IBAction func okTapped(sender: AnyObject) {
+    Alamofire.request(.GET, "https://ruby-china.org/api/topics.json")
+      .responseSwiftyJSON {
+        (request, response, data, error) ->  Void in
+        var title = data[0]["title"].string
+        self.titleTxt.text =  title!
+    }
+    
+  }
+  
 }
 
