@@ -14,7 +14,7 @@ import AlamofireSwiftyJSON
 class ViewController: UIViewController {
 
   @IBOutlet weak var titleTxt: UILabel!
-  
+ 
   override func viewDidLoad() {
     super.viewDidLoad()
     titleTxt.frame = CGRect(x: 0, y: 0, width: 400, height: 100)
@@ -26,7 +26,7 @@ class ViewController: UIViewController {
   }
 
   @IBAction func okTapped(sender: AnyObject) {
-    Alamofire.request(.GET, "https://ruby-china.org/api/topics.json")
+    Alamofire.request(.GET, Topics)
       .responseSwiftyJSON {
         (request, response, data, error) ->  Void in
         var title = data[0]["title"].string
