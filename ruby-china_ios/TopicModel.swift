@@ -11,13 +11,14 @@ import UIKit
 class TopicModel: NSObject {
   var id: String
   var title: String
-  var body: String
-  var body_html: String
-  
-  init (id: String, title: String, body: String, body_html: String) {
+  var avatar: String
+  var created_at: String
+
+  init (id: String, title: String, avatar: String, created_at: String) {
     self.id = id
     self.title = title
-    self.body = body
-    self.body_html = body_html
+    self.avatar = avatar
+    self.created_at = created_at
   }
+
 }

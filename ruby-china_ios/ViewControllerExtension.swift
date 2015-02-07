@@ -11,20 +11,27 @@ import UIKit
 extension ViewController: UITableViewDataSource {
 
   // MARK - UITableViewDataSource
-  
+
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 10
+    return topics.count
   }
-  
+
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+
     // Don't forget to set tableViewCell Identifier in storyboard
     let cell = self.topicsList.dequeueReusableCellWithIdentifier("topicCell") as  UITableViewCell
-   
-//      var topic = topics[indexPath.row] as TopicModel
-      var title = cell.viewWithTag(101) as UILabel
-      var avatar = cell.viewWithTag(102) as UIImageView
-      var time = cell.viewWithTag(103) as UILabel
+    var topic = topics[indexPath.row] as TopicModel
+    var title = cell.viewWithTag(101) as UILabel
+    var avatar = cell.viewWithTag(102) as UIImageView
+    var time = cell.viewWithTag(103) as UILabel
+
+    var avatar_url = NSURL(string: topic.avatar)
+    let data = NSData(contentsOfURL: avatar_url!)
+    avatar.image = UIImage(data: data!)
+
+    title.text = topic.title
+
     return cell
   }
-  
+
 }
