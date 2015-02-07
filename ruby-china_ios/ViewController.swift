@@ -12,12 +12,11 @@ import SwiftyJSON
 import AlamofireSwiftyJSON
 
 class ViewController: UIViewController {
-
-  @IBOutlet weak var titleTxt: UILabel!
  
+  @IBOutlet weak var topicsList: UITableView!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    titleTxt.frame = CGRect(x: 0, y: 0, width: 400, height: 100)
   }
   
   override func didReceiveMemoryWarning() {
@@ -33,7 +32,6 @@ class ViewController: UIViewController {
           var id = item["id"].stringValue
           var title = item["title"].string!
           var url = Topic(id)
-          self.titleTxt.text =  title
         }
         
     }
