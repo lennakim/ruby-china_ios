@@ -11,14 +11,16 @@ import Alamofire
 import SwiftyJSON
 import AlamofireSwiftyJSON
 
+var topics: [TopicModel] = []
+
 class ViewController: UIViewController {
- 
+
   @IBOutlet weak var topicsList: UITableView!
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
   }
-  
+
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
@@ -33,10 +35,10 @@ class ViewController: UIViewController {
           var title = item["title"].string!
           var url = Topic(id)
         }
-        
+
     }
-    
+
   }
-  
+
 }
 
