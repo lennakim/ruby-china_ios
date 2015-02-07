@@ -17,9 +17,13 @@ extension ViewController: UITableViewDataSource {
   }
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = self.topicsList.dequeueReusableCellWithIdentifier("topicCell") as  UITableViewCell
-    
     // Don't forget to set tableViewCell Identifier in storyboard
+    let cell = self.topicsList.dequeueReusableCellWithIdentifier("topicCell") as  UITableViewCell
+   
+//      var topic = topics[indexPath.row] as TopicModel
+      var title = cell.viewWithTag(101) as UILabel
+      var avatar = cell.viewWithTag(102) as UIImageView
+      var time = cell.viewWithTag(103) as UILabel
     return cell
   }
   

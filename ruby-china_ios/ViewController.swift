@@ -16,7 +16,7 @@ var topics: [TopicModel] = []
 class ViewController: UIViewController {
 
   @IBOutlet weak var topicsList: UITableView!
-
+  
   override func viewDidLoad() {
     super.viewDidLoad()
   }
@@ -33,6 +33,7 @@ class ViewController: UIViewController {
         for item in data.arrayValue {
           var id = item["id"].stringValue
           var title = item["title"].string!
+          var avatar = item["user"]["avatar_url"]
           var url = Topic(id)
         }
 
