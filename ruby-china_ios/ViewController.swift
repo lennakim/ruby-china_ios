@@ -29,8 +29,13 @@ class ViewController: UIViewController {
     Alamofire.request(.GET, Topics)
       .responseSwiftyJSON {
         (request, response, data, error) ->  Void in
-        var title = data[0]["title"].string
-        self.titleTxt.text =  title!
+        for item in data.arrayValue {
+          var id = item["id"].stringValue
+          var title = item["title"].string!
+          var url = Topic(id)
+          self.titleTxt.text =  title
+        }
+        
     }
     
   }
