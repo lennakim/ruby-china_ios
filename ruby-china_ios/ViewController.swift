@@ -32,10 +32,9 @@ class ViewController: UIViewController {
   }
 
   func getTopics() -> [TopicModel] {
-
     Alamofire.request(.GET, Topics)
       .responseSwiftyJSON {
-        (request, response, data, error) ->  Void in
+        (request, response, data, error) in
         for item in data.arrayValue {
           var id = item["id"].stringValue
           var title = item["title"].string!
