@@ -19,6 +19,7 @@ class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    topicsList.hidden = true
     topics = getTopics()
   }
 
@@ -42,7 +43,10 @@ class ViewController: UIViewController {
           var created_at = item["created_at"].string!
           var url = Topic(id)
           var topic = TopicModel(id: id, title: title, avatar: avatar, created_at: created_at)
+          
           topics.append(topic)
+          self.topicsList.reloadData() //http request 是异步 需要在callback中reloadData
+          self.topicsList.hidden = false
         }
     }
 
