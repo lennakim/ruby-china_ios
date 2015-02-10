@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B0AD06F81A89E8E80090B89C /* TopicDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AD06F71A89E8E80090B89C /* TopicDetailController.swift */; };
 		B0B0642C1A8393C10039F23D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B0642B1A8393C10039F23D /* AppDelegate.swift */; };
 		B0B064311A8393C10039F23D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0B0642F1A8393C10039F23D /* Main.storyboard */; };
 		B0B064331A8393C10039F23D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0B064321A8393C10039F23D /* Images.xcassets */; };
@@ -114,6 +115,7 @@
 
 /* Begin PBXFileReference section */
 		B013EAC71A8394470059D92D /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = ../../ios_lib/SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
+		B0AD06F71A89E8E80090B89C /* TopicDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicDetailController.swift; sourceTree = "<group>"; };
 		B0B064261A8393C10039F23D /* ruby-china_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ruby-china_ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0B0642A1A8393C10039F23D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0B0642B1A8393C10039F23D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				B0F7E3F31A89C837001CDF87 /* ViewController.swift */,
+				B0AD06F71A89E8E80090B89C /* TopicDetailController.swift */,
 				B0F7E3F41A89C837001CDF87 /* ViewControllerExtension.swift */,
 			);
 			path = controllers;
@@ -465,6 +468,7 @@
 			files = (
 				B0F7E3F11A89C7EF001CDF87 /* api.swift in Sources */,
 				B0B0642C1A8393C10039F23D /* AppDelegate.swift in Sources */,
+				B0AD06F81A89E8E80090B89C /* TopicDetailController.swift in Sources */,
 				B0F7E3F51A89C837001CDF87 /* ViewController.swift in Sources */,
 				B0F7E3F61A89C837001CDF87 /* ViewControllerExtension.swift in Sources */,
 				B0F7E3E71A89C7C7001CDF87 /* TopicModel.swift in Sources */,
