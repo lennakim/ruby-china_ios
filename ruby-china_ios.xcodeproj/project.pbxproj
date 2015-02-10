@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B013EADC1A83A1170059D92D /* api.swift in Sources */ = {isa = PBXBuildFile; fileRef = B013EADB1A83A1170059D92D /* api.swift */; };
-		B0376B6E1A86132300C4FBE3 /* TopicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0376B6D1A86132300C4FBE3 /* TopicModel.swift */; };
-		B0376B861A861C7000C4FBE3 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0376B851A861C7000C4FBE3 /* ViewControllerExtension.swift */; };
 		B0B0642C1A8393C10039F23D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B0642B1A8393C10039F23D /* AppDelegate.swift */; };
-		B0B0642E1A8393C10039F23D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B0642D1A8393C10039F23D /* ViewController.swift */; };
 		B0B064311A8393C10039F23D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0B0642F1A8393C10039F23D /* Main.storyboard */; };
 		B0B064331A8393C10039F23D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0B064321A8393C10039F23D /* Images.xcassets */; };
 		B0B064361A8393C10039F23D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0B064341A8393C10039F23D /* LaunchScreen.xib */; };
 		B0B064421A8393C10039F23D /* ruby_china_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B064411A8393C10039F23D /* ruby_china_iosTests.swift */; };
+		B0F7E3E71A89C7C7001CDF87 /* TopicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7E3E61A89C7C7001CDF87 /* TopicModel.swift */; };
+		B0F7E3F11A89C7EF001CDF87 /* api.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7E3F01A89C7EF001CDF87 /* api.swift */; };
+		B0F7E3F51A89C837001CDF87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7E3F31A89C837001CDF87 /* ViewController.swift */; };
+		B0F7E3F61A89C837001CDF87 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7E3F41A89C837001CDF87 /* ViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,13 +114,9 @@
 
 /* Begin PBXFileReference section */
 		B013EAC71A8394470059D92D /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = ../../ios_lib/SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
-		B013EADB1A83A1170059D92D /* api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = api.swift; sourceTree = "<group>"; };
-		B0376B6D1A86132300C4FBE3 /* TopicModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicModel.swift; sourceTree = "<group>"; };
-		B0376B851A861C7000C4FBE3 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		B0B064261A8393C10039F23D /* ruby-china_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ruby-china_ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0B0642A1A8393C10039F23D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0B0642B1A8393C10039F23D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B0B0642D1A8393C10039F23D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B0B064301A8393C10039F23D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0B064321A8393C10039F23D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B0B064351A8393C10039F23D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -129,6 +125,10 @@
 		B0B064411A8393C10039F23D /* ruby_china_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ruby_china_iosTests.swift; sourceTree = "<group>"; };
 		B0B0644B1A8393E60039F23D /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = ../../ios_lib/Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		B0B0645A1A8393ED0039F23D /* Alamofire-SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Alamofire-SwiftyJSON.xcodeproj"; path = "../../ios_lib/Alamofire-SwiftyJSON/Alamofire-SwiftyJSON.xcodeproj"; sourceTree = "<group>"; };
+		B0F7E3E61A89C7C7001CDF87 /* TopicModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicModel.swift; sourceTree = "<group>"; };
+		B0F7E3F01A89C7EF001CDF87 /* api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = api.swift; sourceTree = "<group>"; };
+		B0F7E3F31A89C837001CDF87 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B0F7E3F41A89C837001CDF87 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,22 +160,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B013EAD91A839CB70059D92D /* Macro */ = {
-			isa = PBXGroup;
-			children = (
-				B013EADB1A83A1170059D92D /* api.swift */,
-			);
-			name = Macro;
-			sourceTree = "<group>";
-		};
-		B0376B771A86134C00C4FBE3 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				B0376B6D1A86132300C4FBE3 /* TopicModel.swift */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
 		B0B0641D1A8393C10039F23D = {
 			isa = PBXGroup;
 			children = (
@@ -200,12 +184,12 @@
 		B0B064281A8393C10039F23D /* ruby-china_ios */ = {
 			isa = PBXGroup;
 			children = (
-				B0376B771A86134C00C4FBE3 /* Models */,
-				B013EAD91A839CB70059D92D /* Macro */,
+				B0F7E3F21A89C837001CDF87 /* controllers */,
+				B0E32EB11A89C6AB0081A0F4 /* models */,
+				B0E32EA81A89C6A10081A0F4 /* macros */,
+				B0E32EA01A89C5DA0081A0F4 /* models */,
 				B0B0642B1A8393C10039F23D /* AppDelegate.swift */,
-				B0B0642D1A8393C10039F23D /* ViewController.swift */,
 				B0B0642F1A8393C10039F23D /* Main.storyboard */,
-				B0376B851A861C7000C4FBE3 /* ViewControllerExtension.swift */,
 				B0B064321A8393C10039F23D /* Images.xcassets */,
 				B0B064341A8393C10039F23D /* LaunchScreen.xib */,
 				B0B064291A8393C10039F23D /* Supporting Files */,
@@ -256,6 +240,38 @@
 				B0B064641A8393ED0039F23D /* AlamofireSwiftyJSONTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B0E32EA01A89C5DA0081A0F4 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				B0F7E3E61A89C7C7001CDF87 /* TopicModel.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		B0E32EA81A89C6A10081A0F4 /* macros */ = {
+			isa = PBXGroup;
+			children = (
+				B0F7E3F01A89C7EF001CDF87 /* api.swift */,
+			);
+			path = macros;
+			sourceTree = "<group>";
+		};
+		B0E32EB11A89C6AB0081A0F4 /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		B0F7E3F21A89C837001CDF87 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B0F7E3F31A89C837001CDF87 /* ViewController.swift */,
+				B0F7E3F41A89C837001CDF87 /* ViewControllerExtension.swift */,
+			);
+			path = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -447,11 +463,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0B0642E1A8393C10039F23D /* ViewController.swift in Sources */,
-				B0376B6E1A86132300C4FBE3 /* TopicModel.swift in Sources */,
-				B013EADC1A83A1170059D92D /* api.swift in Sources */,
-				B0376B861A861C7000C4FBE3 /* ViewControllerExtension.swift in Sources */,
+				B0F7E3F11A89C7EF001CDF87 /* api.swift in Sources */,
 				B0B0642C1A8393C10039F23D /* AppDelegate.swift in Sources */,
+				B0F7E3F51A89C837001CDF87 /* ViewController.swift in Sources */,
+				B0F7E3F61A89C837001CDF87 /* ViewControllerExtension.swift in Sources */,
+				B0F7E3E71A89C7C7001CDF87 /* TopicModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
